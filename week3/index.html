@@ -1,96 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3주차</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>문의하기</title>
+        
+        <meta name="description" content="문의 페이지">
+        <meta property="og:url" content="assignment.html">
+        <meta property="og:description" content="서비스센터 문의">
+        <meta property="og:title" content="문의하기">
+        
+    </head>
+    <body>
+        <header>
+            <p>대표 이미지
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYB2Azhr_wSuP6QJVhikoSYkgi8cxY5_Z1suk2NkMTHA&s=10" 
+                width="50"
+                height="50"
+                alt="대표 이미지">
+            </p> 
+            
+            <hr>
+            <h1>문의하기</h1>
+        </header>
 
-    <meta property="og:url" >
-
-</head>
-<body>
-        <h1>링크</h1>
-        <a href="https://jejunu.ac.kr/" target="_blank">제주대학교</a>
-        <br> 
-        <a href="tel:010-0000-0000">전화번호</a>
-        <br>
-        <a href="mailto:a@gmail.com">메일 보내기</a>
-        <br>
-
-        <a href="#1111">오디오 태그 </a>
-        <br>
-
-        <hr>
-        <h1>이미지 태그</h1>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEX////8+uX7xgD///z6ywD9+uf71kv66qr+/vb8yQD+//r72Fj6zQD9/O740jD74X767LP86aX522f65pf61EL6557899v89dL63G/87rz64IP6zyP88sn75JL70jr46ZsbwDtdAAAA3ElEQVRIie2Q2Y6EIBBFr1IoCLjSoq3S//+XAyYmziRMfG/OC0tyqm4VkMlkMt+Cadnt1fWPRV7eRVs/FotLPI/qEpvbZ1ocRhQt0XSKQnN0RFYAL6LKpEXMpYNwzVwWUbQL4AxTHVZZ4N2mRaPPfKLZdlT94c+IYlBQR/gteUqUHxmOebNKBvEj416XTbUKPhaULh1VqTDcAPjYcQ/5dgLWq2Pxz3L0G/aFPXasMUmxamZCtZ44ji05o2bgm3BaL+OOMQQdayjy0wgcpH1qxN+wv5fmkZbJZDLfzg8YsQlRerjqIAAAAABJRU5ErkJggg==" alt="카카오 이미지">
-        <br>
-        <hr>
-
-        <h1 id="1111">오디오 태그</h1>
-        <audio src="https://www.w3schools.com/html/horse.mp3" controls></audio>
-        <hr>
-
-        <h1>비디오 태그</h1>
-        <video src="https://filesamples.com/samples/video/mp4/sample_1280x720_surfing_with_audio.mp4" controls></video>
-        <hr>
-
-        <h1>폼 태그</h1>
         <form>
             <fieldset>
-                <legend>인풋태그</legend>
-                <label for="id">아이디</label>
-                <input type="text" id="id">
-                <br>
-                <label for="password">비밀번호</label>
-                <input type="password" id="password">
-                <br>
-                <label for="email">이메일</label>
-                <input type="email" id="email">
-                <br>
-                <label for="tel">전화번호</label>
-                <input type="tel" id="tel">
+                <label for="text1">이름</label>
+                <input type="text" id="text1">
+                <label for="email1">이메일</label>
+                <input type="email" id="email1">
 
-                <h2>체크박스</h2>
-                <label for="1">1</label>
-                <input type="checkbox" id="1">
-                <label for="2">2</label>
-                <input type="checkbox" id="2">
-                <label for="3">3</label>
-                <input type="checkbox" id="3">
-
-                <h2>라디오 과일 하나 선택</h2>
-                <input type="radio" id="apple" name="fruits">
-                <label for="apple">사과</label>
-                
-                <input type="radio" id="banana" name="fruits">
-                <label for="banana">바나나</label>
-                
-                <input type="radio" id="peach" name="fruits">
-                <label for="peach">복숭아</label>
-
-                <h2>파일</h2>
-                <input type="file" >
-                
-                <h2>기타 폼요소 </h2>
-                <label for="textarea1">문의내용</label>
-                <textarea name="textarea" id="textarea1"></textarea>
-                <br>
-                
-                <label for="select1">문의유형</label>
-                <select  id="select1">
-                    <option value="a">a</option>
-                    <option value="b">b</option>
-                    <option value="c">c</option>
+                <label for="inq1">문의 유형</label>
+                <select name="inqType" id="inq1">
+                    <option value="a">반품</option>
+                    <option value="b">환불</option>
                 </select>
-
-                <button type="button">클릭</button>
+                <label for="inqContent">문의 내용</label>
+                <textarea name="inq2" id="inqContent"></textarea>
+                <button type="button">제출</button>
             </fieldset>
-
-
-
         </form>
 
 
-
-</body>
-</html>
+        <footer>   
+            <p>
+                이메일:
+                <a href="email@gmail.com" id="email2">email@gmail.com</a>
+            </p>
+            <p>© i Corp. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
