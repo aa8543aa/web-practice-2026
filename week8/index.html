@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- [viewport] 여기에 viewport 메타 태그를 선언하세요 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>제주 여행지 소개</title>
 
@@ -87,10 +87,10 @@
     }
 
     /* [태블릿] 미디어 쿼리 (중단점) 및 디자인 적용 */
+    @media(max-width: 1439px) and (min-width: 768px){
       *{
         font-size: 16px;
       }
-    @media(max-width: 1439px) and (min-width: 768px){
       .menu{
         display: flex;
         flex-direction: row;
@@ -108,10 +108,11 @@
     }
 
     /* [모바일] 미디어 쿼리 (중단점) 및 디자인 적용 */
+    @media(max-width: 767px){
+      
       *{
         font-size: 14px;
       }
-    @media(max-width: 767px){
       .menu{
         display: flex;
         flex-direction: column;
@@ -143,6 +144,7 @@
         --bg: #334155;
         --cardbg:#1e293b;
       }
+    }
     
       body{
         background-color: var(--bodybg);
@@ -161,7 +163,6 @@
         background-color: var(--cardbg);
       }
 
-  } 
 
   </style>
 </head>
